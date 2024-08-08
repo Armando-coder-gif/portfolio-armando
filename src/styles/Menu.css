@@ -1,0 +1,104 @@
+/* Menu.css */
+
+/* Estilos generales */
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  font-family: 'Open Sans', sans-serif; /* Aplicar la fuente */
+}
+
+.menu-container.dark {
+  background-color: #161616;
+}
+
+.menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-item {
+  margin: 0 15px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #16a394;
+  font-size: 20px;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-link:hover {
+  color: #0f675e;
+  transform: scale(1.1);
+}
+
+.menu-link:active {
+  color: #e67e22;
+}
+
+/* Responsive Styles */
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 450px) {
+  .menu-container {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .menu-list {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .menu-item {
+    margin: 10px 0;
+  }
+
+  .menu-link {
+    font-size: 18px; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+  }
+
+  .switch-container {
+    margin-top: 10px; /* Asegúrate de que el interruptor tenga suficiente espacio */
+  }
+}
+
+/* Estilos para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+  .menu-container {
+    padding: 10px;
+  }
+
+  .menu-link {
+    font-size: 16px; /* Ajusta aún más el tamaño de la fuente */
+  }
+
+  .switch-container {
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 20px; /* Ajusta el tamaño de la fuente de los iconos */
+  }
+
+  .switch {
+    width: 50px; /* Ajusta el ancho del interruptor */
+    height: 30px; /* Ajusta la altura del interruptor */
+  }
+
+  .slider:before {
+    height: 22px; /* Ajusta la altura del control deslizante */
+    width: 22px; /* Ajusta el ancho del control deslizante */
+  }
+}

@@ -1,0 +1,19 @@
+.display-as-typed {
+  font-family: 'Roboto', sans-serif; /* Fuente profesional */
+  font-size: 5vw; /* Tamaño de fuente relativo al ancho de la ventana */
+  color: #161616; /* Color del texto */
+  text-align: center; /* Alineación centrada del texto */
+  margin: 0; /* Eliminar margen alrededor del texto */
+  padding: 20px; /* Espacio interno alrededor del texto */
+}
+
+/* Estilo adicional para asegurar que el texto esté bien posicionado */
+.display-as-typed-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: flex-start; /* Alinea el contenido hacia la parte superior */
+  height: 15vh; /* Ocupa toda la altura de la ventana */
+   /*padding: 1px; Añadir espacio interno alrededor del contenedor */
+  box-sizing: border-box; /* Incluir el padding en el tamaño total del contenedor */
+  margin-top: 20vh; /* Ajustar este valor para mover el contenido hacia arriba o abajo */
+}
